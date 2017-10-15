@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="ToolbarThemeBase" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@android:color/transparent</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="ToolbarTheme" parent="@style/ToolbarThemeBase">
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+        <!-- <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item> -->
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <!--<item name="dropDownListViewStyle">@style/PopupMenuListView</item>-->
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
+        <item name="navigationIcon">@drawable/ic_ab_back</item>
+        <!--TextView-->
+        <item name="android:textIsSelectable">false</item>
+        <!--<item name="android:textColorHint">@drawable/editable_hint_text_color_selector</item>-->
+
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <!--<item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>-->
+        <!--<item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>-->
+        <!--<item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>-->
+        <!--<item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>-->
+        <!--<item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>-->
+    </style>
+    <style name="ToolbarStyle" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="titleTextAppearance">@style/ToolBarTitleTextStyle</item>
+    </style>
+    <style name="ToolBarTitleTextStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="MenuTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--溢出菜单样式 -->
+    <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:dropDownVerticalOffset">4dip</item>
+        <item name="android:dropDownHorizontalOffset">4dip</item>
+    </style>
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_moreoverflow</item>
+    </style>
+
+    <style name="EditTextWhite">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">#4CFFFFFF</item>
+    </style>
+</resources>
